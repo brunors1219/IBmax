@@ -1,0 +1,496 @@
+/*Desativar barra de rolagem horizontal*/
+html{
+    overflow-x:hidden;
+}
+
+/*configuração do corpo do código*/
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+}    
+ 
+/*Barra de menu*/
+.menu{
+    background: linear-gradient(to top, #355186 0%, #14b3e7 100%);
+    width: 100%;
+    height: 90px;
+    display: inline-block;
+    position: fixed;
+    top: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 109;
+}
+
+.menu :hover{
+    color: rgba(9, 13, 228, 0.767);
+    transition: 0.5s;
+}
+
+.topnav {
+    overflow: hidden;
+   
+}
+
+.topnav .icon {
+    display: none;
+}
+
+/*config lista com o link*/
+.topnav a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    margin-top: 15px;
+    list-style-type: none;
+    font-weight: bolder;
+    margin-right: 25px;
+    font-size: 23px;
+}
+
+.topnav-right {
+    float: right;
+}
+
+.topnav-right a {
+    float: left;
+}
+
+/*Config logo*/
+.logo{
+float: left;
+margin: 23;
+height: 60px;
+width: 200px;
+padding: 13px;
+margin-right: 25px;
+}
+
+.logo img{
+margin-top: -5px;
+height: 80px;
+width: 200px;
+margin-left: 5px;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+    
+main{
+    display: block;
+}
+
+.titulo {
+    text-align: center;
+    text-transform: uppercase;
+}
+    
+.container{
+    width: 70%;
+    text-align: justify;
+    margin: 0 auto;
+    font-size: 1.4em;
+    line-height: 2em;
+    margin-bottom: 200px;
+}
+
+.baixo {
+    margin-bottom: 200px;
+}
+
+.container_card{
+    text-align: center;
+    margin-bottom: 200px;
+}
+    
+section.module{
+    margin-bottom: 40px;
+}
+.container img{
+
+    width: 50px;
+    height: 50px;
+}
+.imagem img{
+    width: 50px;
+    height: 50px;
+}
+.box img{
+    width: 50px;
+    height: 50px;   
+}
+section.module:last-child{
+    margin-bottom: 0;
+}
+    
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+    
+section.module.content{
+    padding: 20px 0;
+    background: white;
+}
+    
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    position: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-backgroud-size:cover;
+}
+    
+section.module.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom,rgba(0, 0, 0, 0)0,rgba(0,0,0,0) 40,#000 100%,);
+    background: -webkit-linear-gradient(to bottom,rgba(0,0,0,0)0,rgba(0,0,0,0) 40,#000 100%,);
+    background: linear-gradient(to bottom,rgba(0,0,0,0)0,rgba(0,0,0,0) 40,#000 100%,);
+}
+
+/*Primeira parte da imagem de fundo*/   
+section.module.parallax-1{
+    background-image: url("img/fundo.png");
+    margin-top: -5%;
+    background-size: 100% 135%;
+    }
+/*Segunda parte da imagem de fundo*/  
+
+section.module.parallax h1{
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    z-index: 50;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to top, #355186 0%, #14b3e7 100%);
+    margin: 0 auto;
+    border-radius: 30px;
+    padding: 30px;
+}
+
+/*
+Class 'ROW' engloba todos os elementos dos cards 
+*/
+.row{
+    /*Para centralizar todos os elementos */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /*Centraliza na vertical*/
+    font-family: "Poppins", sans-serif;/* horizontal*/
+    background-color:rgb(255, 255, 255);
+}
+.card{
+    border-radius: 6px;/*Deixa a borda arrendondada*/
+    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);/*Sombreamento nos cards*/
+    padding: 20px;/*Tamanhos dos elementos*/
+    margin: 30px; /*espaçamento entre eles*/
+    width: 180px;/*tamanho dos cards*/
+    height: 150px;
+    transition: all 0.5s ease-out; /*lentidao ao movimento ao passar a seta por cima*/
+    background: linear-gradient(to bottom, #355186d7 0%, #14b3e7 100%);/*Cor dos cards*/
+    color: rgb(255, 255, 255);/*cor dp paragrafo*/
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+}
+.card:hover{
+    /*Efeito de quando passa a seta por cima*/
+    transform: translateY(-7px);
+    cursor: pointer;
+}
+
+.material-symbols-outlined {
+  font-size: 60px;
+}
+
+.a {
+    margin-top: 42px;
+}
+
+.b{
+    margin-top: 40px;
+}
+
+
+
+.i1{/*Define o tamanho das imagens*/
+    max-width: 60px;
+    max-height: 60px;
+}
+
+/*Fim dos cards de serviços*/
+
+/*Css inincio dos cards Lorena*/
+.caixa{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;/*alienar elementos no centro*/
+    font-family: "Poppins",sans-serif;/*fonte*/
+}
+
+.caixa2{/*caixa box, tamanhos do cards*/
+    border-radius: 10px;/*borda*/
+    box-shadow: 7px 7px 13px 0px rgb(39, 33, 33);/*sombreamento*/
+    padding: 45px;/* preenchimento*/
+    margin: 40px; /*margem*/
+    width: 570px;/*largura*/
+    height: 200px;/*altura*/
+    transition: all 0.2s ease-out;/* transição dps cards*/
+    background: rgba(255, 253, 253, 0.733);
+    font-weight:bold;/*fonte em negrito*/
+    color: black;/*cor*/
+    
+}
+
+.icon3{
+    width: 27px;
+    height: 35px;
+    float: left;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 20%; 
+    margin: 5px;
+}
+
+.icon3:hover{
+    background-color: #0098fd62;
+    transition: 0.9s;
+    cursor: pointer;
+}
+
+.i2{ /*imagens*/
+    width: 200px;/*largura*/
+    height: 180px;/*altura*/
+    float: left;/*aliamento*/
+    margin: auto;/*margem*/
+    display: block;/*exibição*/
+    padding-right: 20px;
+
+}
+.caixa2:hover{
+    /*Efeito de quando passa a seta por cima*/
+    transform: translateY(-5px);
+    
+}
+
+.caixa2 a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer{
+    background-color: lightblue; /*cor de fundo*/
+}
+/*MAPA*/
+.mapa{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0;
+    box-shadow: 7px 7px 20px 5.5px rgba(0, 0, 0, 0.281);
+    margin-top: 115px;
+}
+
+/*Css do rodapé*/
+footer{ /*propriedades do rodapé*/
+    position: absolute low;
+    bottom: 0px;
+    height: 350px;
+    width: 100%;
+    background: linear-gradient(to top, #355186 0%, #14b3e7 100%);
+    margin: 0;
+    margin-top: 0;
+    padding: 40px;
+    padding-top: 0;
+    box-sizing: border-box;
+    color: white; 
+    line-height: 25px;
+}
+.conteudo{ /* todo rodapé virá flex container*/
+    display: flex;
+}
+.conteudo .box{ /*tamanho dos container*/
+    flex-basis: 50%;
+    padding: 10px 20px 10px;
+}
+.box h2{ /* titulo*/
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.box .contato{ /* barrinha colorida abaixo dos titulos */
+    margin: 20px 0 0 0;
+    position: relative;
+}
+.box .contato:before{ /* final da barrinha colorida abaixo dos titulos */
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: rgb(0, 132, 255);
+    top: -10px;
+}
+.icones i{ /* tamanho, cor e arrendodamento da borda dos icones*/
+    font-size: 22px;
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50%; 
+    margin: 5px;
+}
+.icon2{
+    float: left;
+    border-radius: 20%;
+}
+/*Espaçamento footer*/
+.esp {
+    padding-top: 25px;
+}
+
+.espa {
+    padding-top: 100px;
+}
+/*Fim do rodape*/
+
+/**********Formulário Modal**********/
+/*Background do modal*/
+.modal {
+    display: none; /*Escondido por padrão*/
+    position: fixed; /*Fixado no lugar*/
+    z-index: 1; /*Fica no topo*/
+    padding-top: 150px; /*Localização da caixa*/
+    left: 0; /*Esquerda*/
+    top: 0; /*Direita*/
+    width: 100%; /*Largura total*/
+    height: 100%; /*Altura total*/
+    overflow: auto; /*Habilita o scroll se necessário*/
+    background-color: rgba(0, 0, 0, 0.4); /*Escurece o fundo atrás do modal*/
+}
+
+/*Conteúdo do modal*/
+.modal-content {
+    background: linear-gradient(to top, #355186 0%, #14b3e7 100%); /*Cor de fundo*/
+    margin: auto; /*Margem*/
+    padding: 20px; /*Espaçamento*/
+    border: transparent; /*Borda*/
+    width: 600px; /*Largura do modal*/
+    border-radius: 20px; /*Borda arredondada*/
+}
+
+/*Botão de abrir o modal hover*/
+.icon2:hover {
+    background: linear-gradient(to top, #14b3e7 0%, #355186 100%);
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.7s;
+}
+
+/*Botão de fechar*/
+.close {
+    color: #aaaaaa; /*Cor*/
+    float: right; /*Alinhamento*/
+    font-size: 28px; /*Tamanho da fonte*/
+    font-weight: bold; /*Negrito*/
+}
+
+/*Botão de fechar em hover e foco*/
+.close:hover, .close:focus {
+    color: #000; /*Cor*/
+    cursor: pointer; /*Mouse mãozinha*/
+}
+
+/*Campos de input*/
+input {
+    width: 230px; /*Largura*/
+    box-sizing: border-box; /**/
+    padding: 15px; /*Espaçamento*/
+    border-radius: 20px; /*Borda arredondada*/
+    margin-bottom: 15px; /*Margem inferior*/
+    margin-right: 30px; /*Margem da direita*/
+    margin-left: 20px; /*Margem da esquerda*/
+    font-family: Arial, Helvetica, sans-serif; /*Fonte*/
+    border: none; /*Sem borda*/
+}
+
+/*Campos de input e mensagem no hover*/
+input:hover, textarea:hover {
+    border: 2px solid blue; /*Cor e espessura da borda*/
+}
+
+/*Botão de enviar*/
+input[type=image] {
+    background-color: white; /*Cor de fundo*/
+    border: none; /*Sem borda*/
+    margin-left: 530px; /*Margem da esquerda*/
+    width: 50px; /*Largura*/
+    height: 50px; /*Altura*/
+    border-radius: 20px; /*Borda arredondada*/
+}
+
+/*Botão de enviar no hover*/
+input[type=image]:hover {
+    border: 2px solid blue; /*Cor e espessura da borda*/
+}
+
+/*Campo de mensagem*/
+textarea {
+    width: 450px; /*Largura*/
+    height: 150px; /*Altura*/
+    resize: none; /*Não redimensionar*/
+    border-radius: 10px; /*Borda arredondada*/
+    margin-left: 65px; /*Margem da esquerda*/
+    font-family: Arial, Helvetica, sans-serif; /*Fonte*/
+    border: none; /*Sem borda*/
+    text-indent: 5px; /*Indentação da primeira linha*/
+}
+
+/*Campos de input e mensagem em foco*/
+input:focus, textarea:focus {
+    border: none /*Sem borda (Não funcionou)*/
+}
+
+/*Responsividade do modal*/
+@media screen and (max-width: 680px) {
+    .modal-content {
+        width: 70%;
+    }
+    input {
+        width: 90%;
+    }
+    textarea {
+        width: 90%;
+        margin-left: 20px;
+    }
+    input[type=image] {
+        margin-left: 45%;
+        margin-top: 10px;
+    }
+}
+
+/*Campos de input e mensagem em foco*/
+input:focus, textarea:focus {
+    border: none /*Sem borda (Não funcionou)*/
+}
+
+

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="icon" href="img/Ícones/smartphone.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="card.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsividade.css">
+    <link rel="stylesheet" href="menu.css">
+    <title>IB-MAX</title>
+</head>
+<body>
+    <!--Barra de menu-->
+    <header class="menu">
+        <nav>
+            <a href="#Home" class="logo"><img src="img/logo.png" height="40px"></a>
+
+            <div class="mobile-menu">
+                <div class="linha1"></div>
+                <div class="linha2"></div>
+                <div class="linha3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a class="nav-item" href="#Home">Home</a>
+                <li><a class="nav-item" href="#Empresa">Empresa</a>
+                <li><a class="nav-item" href="#Servicos">Serviços</a>
+                <li><a class="nav-item" href="#cliente">Clientes</a>
+                <li><a class="nav-item" href="#contato">Contatos</a>
+                </li>
+            </ul>    
+        </nav>
+      
+    </header>
+
+    <div class="wrapper" id="Home">
+        <main>
+            <section class="module parallax parallax-1">
+                <h1 class="area-2">O melhor para você <br> está aqui na IBmax!</h1>
+            </section>
+            <!--Empresa-->
+                <div class="container"  id="Empresa">
+                    <h2 class="titulo">Empresa</h2>
+                    <p>
+                        IB MAX é uma empresa fundada e sediada em Sete Lagoas, com 19 anos de mercados. Nosso principal objetivo é
+                        entender as demandas de nossos clientes e oferecer o melhor projeto para transformar necessidades em soluções de qualidade.Para isso 
+                        contamos com nossa metodologia totalmente focada na praticidade e eficiência. Nossa missão é efetivar o crescimento de nossos clientes
+                        oferecendo soluções através de Inovação Tecnologia de Ponta. Oferecemos soluções completas para suas necessidades em T.I.
+                    </p>
+                </div>
+
+
+            <!--Cards Guilherme-->    
+            <div class="container_card">
+                <div class="container2">
+                    <div class="card_g">
+                        <div class="contente">
+                            <h2><img src="img/desenvolvimento_app.png" alt=""  width="90px" height="90px"></h2>
+                            <h3>Desenvolvimento de APP</h3>
+                            <p>
+                                Somos especialistas em desenvolvimento de aplicativos móveis, nativos ou híbridos, compatíveis com celulares Android e iOS. Desenvolvemos aplicativos de alta performance, adaptados às suas necessidades e de seu público.
+                            </p>
+                           
+                        </div>
+                    </div>
+            
+                    <div class="card_g">
+                        <div class="contente">
+                            <h2><img src="img/fabrica_softwares.png" alt=""  width="90px" height="90px"></h2>
+                            <h3>Fábrica de <br>
+                                Softwares</h3>
+                            <p>
+                                Acelere o desenvolvimento dos seus projetos de softwares com a terceirização de equipe especializada, in-loco ou remota, para atender as suas necessidades pontuais, garantindo a entrega do projeto no prazo.
+                            </p>
+                            
+                        </div>
+                    </div>
+            
+                    <div class="card_g">
+                        <div class="contente">
+                            <h2><img src="img/software_demanda.png" alt=""  width="90px" height="90px"></h2>
+                            <h3>Software sob Demanda</h3>
+                            <p>
+                                Desenvolvemos softwares sob demanda para guiar seu projeto ao sucesso. Nossa metodologia adere de uma consultoria para alinhar todas as expectativas e detalhes que nem sempre estão nítidos na concepção de um novo software.
+                            </p>
+                            
+                        </div>
+                    </div>
+            
+                    <div class="card_g">
+                        <div class="contente">
+                            <h2><img src="img/smartphones.png" alt=""  width="90px" height="90px"></h2>
+                            <h3>Aplicações <br>
+                                 Mobile</h3>
+                            <p>
+                                Ajudamos médias e grandes empresas a desenvolver aplicativos eficientes para o seu negócio, com todos os detalhes necessários para o sucesso de sua ideia, através de uma consultoria personalizada em imersão no projeto.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <script type="text/javascript" src="card.js"></script>
+                <script>
+                    VanillaTilt.init(document.querySelectorAll(".card_g"), {
+                        max: 25,
+                        speed: 400,
+                        glare: true,
+                        "max-glare": 1,
+                    })
+                </script>
+            </div>
+
+            <!--Fim Cards Guilherme-->
+
+<!--Fim empresa-->
+
+
+<!--Serviços-->
+            <h1 class="titulo" id="Servicos">Serviços</h1>
+                <!--Divs dos 4 primeiros serviços-->
+                <div class="servicos1"><!--class cards dos serviços-->
+
+                    <div class="row"><!--class de todos os elementos-->
+
+                        <div class="card a"><!--"a"cards com duas linhas-->
+                            <p>Desenvolvimento de Aplicativos</p>
+                            <span class="material-symbols-outlined i1">phone_iphone</span>
+                            <!--class e endereço da imagem-->
+                        </div>
+
+                        <div class="card a">
+                            <p>Outsourcing de profissionais</p>
+                            <span class="material-symbols-outlined i1">person</span>
+                        </div>
+
+                        <div class="card a">
+                            <p>Segurança da informação</p>
+                            <span class="material-symbols-outlined i1">verified_user</span>
+                        </div>
+
+                        <div class="card b"><!--"b" cards com uma linha-->
+                            <p>Product Discovery</p>
+                            <span class="material-symbols-outlined i1">devices</span>
+                            </div>
+                    </div>
+
+                <!--Divs da segunda linha de serviços-->
+                <div class="servicos1"><!--class cards dos serviços-->
+
+                    <div class="row"><!--class de todos os elementos cards-->
+
+                        <div class="card a"><!--"a"cards com duas linhas-->
+                            <p>Desenvolvimento de Software Web/Desktop</p>
+                            <span class="material-symbols-outlined i1">laptop_mac</span>
+                        </div>
+
+                        <div class="card a"><!--"b" cards com uma linha-->
+                            <p>Adequação LGPD</p>
+                            <span class="material-symbols-outlined i1">policy</span>
+                        </div>
+
+                        <div class="card a">
+                            <p>Consultoria de TI</p>
+                            <span class="material-symbols-outlined i1">construction</span>
+                        </div>
+
+                        <div class="card a">
+                            <p>Inteligência Artificial</p>
+                            <span class="material-symbols-outlined i1">psychology</span>
+                        </div>
+
+                    </div>
+                    
+                <!--Divs da terceira linha de serviços-->
+                <div class="baixo servicos1"><!--class cards dos serviços-->
+                    <div class="row"><!--class de todos os elementos cards-->
+                        <div class="card a"><!--"a"cards com duas linhas-->
+                            <p>Desenvolvimento de Software Embarcado</p>
+                            <span class="material-symbols-outlined i1">terminal</span>
+                        </div>
+
+                        <div class="card a">
+                            <p>Desenvolvimento de Produtos IOT</p>
+                            <span class="material-symbols-outlined i1">business_center</span>
+                        </div>
+
+                        <div class="card a">
+                            <p>Serviço de Hospedagem</p>
+                            <span class="material-symbols-outlined i1">dns</span>
+                        </div>
+
+                        <div class="card a"><!--"b" cards com uma linha-->
+                            <p>Exemplo</p>
+                            <span class="material-symbols-outlined i1">adb</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!--Fim serviço-->
+                
+<!--Cliente-->
+                <h1 class="titulo" id="cliente">Clientes</h1>
+                <div class="caixa">
+                    <div class="caixa2">
+                        
+                        <img  class= "i2" src="/img/velas samaria.png" alt="">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorem facere nesciunt, deserunt quibusdam corrupti quo doloribus ab totam quaerat eos ullam accusamus nostrum numquam labore laboriosam consequatur eveniet ipsum!</p>
+                        <div class="icon3">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-sharp fa-solid fa-globe"></i>
+                        </div>
+                        <div class="icon3">
+                            <a href="https://www.instagram.com/raimundoprodutossamaria/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                
+                    <div class="caixa2">
+                        <img class= "i2"  src="/img/brotitos.png" alt="Brotitos">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id ipsam dolorum vero, aspernatur cumque odio omnis similique, sapiente incidunt hic reiciendis! Aut vitae ipsa earum praesentium voluptate doloribus adipisci!</p>
+                        <div class="icon3">
+                            <i class="fa-brands fa-whatsapp"><a href="#"></a></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-sharp fa-solid fa-globe"></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        
+                    </div>
+
+                    <div class="caixa2">
+                        <img class= "i2"  src="/img/" alt="Pingo de Ouro">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id ipsam dolorum vero, aspernatur cumque odio omnis similique, sapiente incidunt hic reiciendis! Aut vitae ipsa earum praesentium voluptate doloribus adipisci!</p>
+                        <div class="icon3">
+                            <i class="fa-brands fa-whatsapp"><a href="#"></a></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-sharp fa-solid fa-globe"></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        
+                    </div>
+
+                    <div class="caixa2">
+                        <img class= "i2"  src="/img/" alt="Aliança">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id ipsam dolorum vero, aspernatur cumque odio omnis similique, sapiente incidunt hic reiciendis! Aut vitae ipsa earum praesentium voluptate doloribus adipisci!</p>
+                        <div class="icon3">
+                            <i class="fa-brands fa-whatsapp"><a href="#"></a></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-sharp fa-solid fa-globe"></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        
+                    </div>
+
+                    <div class="caixa2">
+                        <img class= "i2"  src="/img/" alt="Ultra Forte">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id ipsam dolorum vero, aspernatur cumque odio omnis similique, sapiente incidunt hic reiciendis! Aut vitae ipsa earum praesentium voluptate doloribus adipisci!</p>
+                        <div class="icon3">
+                            <i class="fa-brands fa-whatsapp"><a href="#"></a></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-sharp fa-solid fa-globe"></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        
+                    </div>
+
+                    <div class="caixa2">
+                        <img class= "i2"  src="/img/" alt="Ferro Velho">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id ipsam dolorum vero, aspernatur cumque odio omnis similique, sapiente incidunt hic reiciendis! Aut vitae ipsa earum praesentium voluptate doloribus adipisci!</p>
+                        <div class="icon3">
+                            <i class="fa-brands fa-whatsapp"><a href="#"></a></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-sharp fa-solid fa-globe"></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        
+                    </div>
+
+                    <div class="caixa2">
+                        <img class= "i2"  src="/img/" alt="RM">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id ipsam dolorum vero, aspernatur cumque odio omnis similique, sapiente incidunt hic reiciendis! Aut vitae ipsa earum praesentium voluptate doloribus adipisci!</p>
+                        <div class="icon3">
+                            <i class="fa-brands fa-whatsapp"><a href="#"></a></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-sharp fa-solid fa-globe"></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        
+                    </div>
+
+                    <div class="caixa2 espaco">
+                        <img class= "i2"  src="/img/" alt="Extra">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora id ipsam dolorum vero, aspernatur cumque odio omnis similique, sapiente incidunt hic reiciendis! Aut vitae ipsa earum praesentium voluptate doloribus adipisci!</p>
+                        <div class="icon3">
+                            <i class="fa-brands fa-whatsapp"><a href="#"></a></i>
+                         </div>
+                         <div class="icon3">
+                            <i class="fa-sharp fa-solid fa-globe"></i>
+                        </div>
+                        <div class="icon3">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        
+                    </div>
+
+                </div>
+
+
+<!--Fim Cliente-->
+
+<!--Contato-->
+                
+                <!--Formulario-->
+                <div id="contato">
+                    <!--Abre o modal-->
+                    <!--O modal-->
+                    <div id="myModal" class="modal">
+                        <!--Conteúdo do modal-->
+                        <div class="modal-content">
+                        <!--Botão de fechar-->
+                            <span class="close">&times;</span>
+                            <!--Formulário-->
+                            <form action="https://formsubmit.co/ibmax.site@gmail.com" method="post">
+                            <!--Template-->
+                                <input type="hidden" name="_template" value="box">
+                                <!--Nome-->
+                                <input type="text" name="nome" placeholder="Nome*" required>
+                                <!--Email-->
+                                <input type="email" name="email" placeholder="Email*" required>
+                                <!--Telefone-->
+                                <input type="tel" name="telefone" placeholder="Telefone*" required>
+                                <!--Empresa-->
+                                <input type="text" name="empresa" placeholder="Empresa*" required>
+                                <!--Campo de mensagem-->
+                                <textarea name="mensagem" placeholder="Mensagem" cols="30" rows="10"></textarea>
+                                <!--Botão de enviar-->
+                                <input type="image" name="enviar" src="img/plane.png">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            <div class="mapa ">
+                
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.513582177615!2d-44.23075968454659!3d-19.433411686883876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa64538a249cfbb%3A0x4d0ee6bd9940006e!2sIBMAX%20Inform%C3%A1tica!5e0!3m2!1spt-BR!2sbr!4v1674501554306!5m2!1spt-BR!2sbr" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>            
+        </main>
+    </div>
+
+    <!-- Ínicio Acessibilidade -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- Fim Acessibilidade -->
+
+<!--Fim contato-->
+<!--Rodapé-->                            
+<footer id="contato">
+    <div class="conteudo">
+        <div class="esquerda box">
+            <h2> Sobre nós</h2>
+            <div class="contato icones">
+                <p class="esp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet iste facilis harum eos vel incidunt distinctio corrupti iure? Rem
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quisquam impedit dolorum optio distinctio quo officiis non unde veritatis, voluptatum atque sed mollitia, dolores quaerat ex commodi quos rem eveniet?
+                </p>                
+            </div>
+        </div><!--left box-->
+        <div class="centro box">
+            <h2>Endereço</h2>
+            <div class="contato icones">
+                <div class="endereço"><br>
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    <span class="texto">R. Rolândia N° 98, Aeroporto Industrial, Sete Lagoas - MG 35701-316</span>
+                </div>				
+            </div>
+        </div>
+        <div class="direita box">
+            <h2>Contato</h2>
+            <div class=" esp contato icones">                       
+                <div class="icon2">
+                    <i class="fa-brands fa-whatsapp"><a href="#"></a></i>
+                    <span class="texto"></span>
+                </div>
+                <div class="icon2">
+                    <i id="myBtn" class="fa-solid fa-envelope"></i>
+                    <span class="texto"></span>
+                </div>
+                <div class="icon2">
+                    <i class="fa-brands fa-telegram"><a href="#"></a></i>
+                    <span class="texto"></span>
+                </div>
+                <div class="icon2">
+                    <i class="fa-brands fa-linkedin"><a href="#"></a></i>
+                    <span class="texto"></span>
+                </div>
+                <div class="icon2">
+                    <i class="fa-brands fa-facebook"><a href="#"></a></i>
+                    <span class="texto"></span>
+                </div>
+                <div class="icon2">
+                    <i class="fa-brands fa-instagram"><a href="#"></a></i>
+                    <span class="texto"></span>
+                </div>
+        </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="menu.js"></script>
+<script src="nav-bar.js"></script>
+
+    
+</body>
+</html>
+

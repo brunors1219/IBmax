@@ -1,0 +1,137 @@
+/*Desativar barra de rolagem horizontal*/
+html{
+    overflow-x:hidden;
+}
+
+/*configuração do corpo do código*/
+body{
+    margin: 0;
+    padding: 0;
+    color: #242424;
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word; 
+}    
+ 
+/*Barra de menu*/
+
+
+li :hover{
+    color: rgba(9, 13, 228, 0.767);
+    transition: 0.5s;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgba(0, 0, 0, 0);
+    height: 8vh;
+   
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background:white;
+    margin: 8px;
+    transition: 0.2s;
+}
+
+/*config lista com o link*/
+.nav-list a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    margin-top: 15px;
+    list-style-type: none;
+    font-weight: bolder;
+    margin-right: 25px;
+    font-size: 23px;
+}
+
+/*Config logo*/
+.logo{
+    float: left;
+    margin: 23;
+    padding: 13px;
+    margin-right: 25px;
+}
+
+.logo img{
+    margin-top: -5px;
+    height: 80px;
+    width: 200px;
+    margin-left: 5px;
+}
+
+/*Parte do cabeçalho responsivo*/
+@media (max-width: 940px){
+    .nav-list{
+        overflow: hidden;
+        position: fixed;
+        top: 8vh;
+        right: 0;
+        width: 30vw;
+        height: 35vh;
+        background: linear-gradient(to top, #355186 0%, #14b3e7 100%);
+        flex-direction: column;
+        align-items: center;
+        justify-content:space-around;
+        transform: translateX(100%);
+        transition:transform 0.3s ease-in;
+    }
+    .nav-list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+    .mobile-menu{
+        display: block;
+        overflow: hidden;
+    }
+    .nav-list.active{
+        transform: translateX(0);
+    }
+    
+    
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/*Linhas do cabeçalho*/
+.mobile-menu.active .linha1{
+    transform: rotate(-45deg) translate(-8px , 8px);
+}
+.mobile-menu.active .linha2{
+    opacity: 0;
+}
+.mobile-menu.active .linha3{
+    transform: rotate(45deg) translate(-5px , -7px); 
+}
+
+nav.active{
+    background-color: gray;
+    box-shadow: 0px 5px 5px rgba(100, 100, 100, 0.8);
+    transition: 0.5s;
+    
+}

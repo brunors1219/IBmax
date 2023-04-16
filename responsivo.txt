@@ -1,0 +1,9 @@
+   section.module.parallax-1 h1{
+        font-size: 30px; /*tamanho da fonte da frase principal*/
+    }
+    
+    .logo img{
+        height: 70px;
+        width: 140px;
+        margin-top: -16px;
+    } /*logo*/
